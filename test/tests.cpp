@@ -181,6 +181,14 @@ TEST(bloom_filter_basic) {
   CHECK_EQUAL(obfc.lookup("foo"), 1u);
 }
 
+TEST(cuckoo_filter) {
+  cuckoo_filter bf(10, 8);
+  bf.add(12);
+
+  // True-positives
+  CHECK_EQUAL(bf.lookup(12), 1u);
+}
+
 TEST(bloom_filter_counting) {
   counting_bloom_filter bf(make_hasher(3), 10, 2);
   for (size_t i = 0; i < 3; ++i) {

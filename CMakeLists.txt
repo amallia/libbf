@@ -78,6 +78,7 @@ set(libbf_sources
   src/bloom_filter/basic.cpp
   src/bloom_filter/bitwise.cpp
   src/bloom_filter/counting.cpp
+  src/bloom_filter/cuckoo.cpp
   src/bloom_filter/stable.cpp
 )
 

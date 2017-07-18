@@ -5,6 +5,7 @@
 #include "bf/bloom_filter/basic.hpp"
 #include "bf/bloom_filter/bitwise.hpp"
 #include "bf/bloom_filter/counting.hpp"
+#include "bf/bloom_filter/cuckoo.hpp"
 #include "bf/bloom_filter/stable.hpp"
 
 #endif
